@@ -1,0 +1,8 @@
+.fade-container {
+    background: rgb(255, 255, 255);
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 0;
+    border: none;
+}

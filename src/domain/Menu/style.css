@@ -1,0 +1,29 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --bg-primary: rgb(26, 61, 138);
+    --bg-secondary: #2F4F4F;
+    --nav-size: 5vw;
+    --speed: 500ms
+}
+
+.menu {
+    flex: 1 0 0%;
+    display: flex;
+}
+
+.menu-primary-enter {
+    position: absolute;
+    transform: translateX(-110%);
+  }
+  .menu-primary-enter-active {
+    transform: translateX(0%);
+    transition: all var(--speed) ease;
+  }
+  .menu-primary-exit {
+    position: absolute;
+  }
+  .menu-primary-exit-active {
+    transform: translateX(-110%);
+    transition: all var(--speed) ease;
+  }
