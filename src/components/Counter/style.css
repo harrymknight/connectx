@@ -1,4 +1,0 @@
-svg.input {
-    position: relative;
-    z-index: calc(var(--rows) * var(--columns) * 2);
-}
