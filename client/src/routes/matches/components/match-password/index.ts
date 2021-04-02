@@ -1,0 +1,1 @@
+export { default as MatchPassword } from './match-password';

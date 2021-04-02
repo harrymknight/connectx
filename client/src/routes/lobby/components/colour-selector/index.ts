@@ -1,0 +1,1 @@
+export { default as ColourSelector } from './colour-selector';

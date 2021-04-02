@@ -1,0 +1,9 @@
+.board-counter-enter {
+    transform: translateY(calc(-1 * var(--height)));
+}
+
+.board-counter-enter-active {
+    transform: translateY(var(--height)) var(--time) cubic-bezier(0.11, 0, 0.5, 0);
+    transition: transform var(--time);
+}
+

@@ -1,0 +1,10 @@
+.colour-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font: 3.5rem Helvetica, sans-serif, bold;
+    -webkit-text-stroke: 0.1rem #000000;
+    border: 2.5px solid #ddd;
+    box-sizing: border-box;
+}

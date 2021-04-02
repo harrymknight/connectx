@@ -1,0 +1,98 @@
+.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-page h1 {
+    margin-bottom: 0px;
+}
+
+.login-page form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.login-page input, .login-page button {
+    margin: 2.5px 10px 2.5px 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.login-page input.user {
+    display: block;
+    width: calc(100% - 20px);
+}
+
+.login-page div.options-group {
+    margin-top: 2.5px;
+}
+
+.login-page div.password-group {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.login-page div button.password-eye {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    right: 1px;
+}
+
+.login-page button[type=button].option {
+    display: inline-block;
+    width: calc(50% - 12.5px);
+    color:  	#777777;
+    outline: none;
+    transition: all 0ms;
+}
+
+.login-page button[type=button].option.left {
+    margin: 0px 2.5px 5px 10px;
+    color: #000000;
+    border-color: #000000;
+}
+
+.login-page button[type=button].option.right {
+    margin: 0px 10px 5px 2.5px;
+}
+
+.login-page button[type=button].option.highlight-enter {
+    color: #777777;
+}
+
+.login-page button[type=button].option.highlight-enter-active {
+    color: #000000;
+    border-color: #000000;
+}
+
+.login-page button[type=button].option.highlight-enter-done {
+    color: #000000;
+    border-color: #000000;
+}
+
+.login-page button[type=button].option.highlight-exit {
+    color: #000000;
+    border-color: #000000;
+}
+
+.login-page button[type=button].option.highlight-exit-active {
+    color: #777777;
+    border-color: #ddd;
+}
+
+.login-page button[type=button].option.highlight-exit-done {
+    color: #777777;
+    border-color: #ddd;
+}

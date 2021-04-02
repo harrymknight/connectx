@@ -1,0 +1,35 @@
+.match-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+.match-item > div {
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: #fff;
+    width: 12.5vw;
+}
+
+.match-item > div.clicked {
+    background-color: green;
+    border: 1px solid green;
+}
+
+.match-item > div.end {
+    width: calc(12.5vw - 12px);
+}
+
+.match-item.top > div {
+    border-top: 0px;
+}
+
+.match-item.bottom > div {
+    border-bottom: 0px solid #ddd;
+}

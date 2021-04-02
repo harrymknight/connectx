@@ -1,0 +1,15 @@
+.match-action {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+    background-color: #fff;
+    height: 10%;
+}
+
+.match-action > div {
+    justify-self: center;
+}

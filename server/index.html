@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Test</h1>
+    <button id='btnCreate'>Create</button>
+    <script>
+        let ws = new WebSocket("ws://localhost:3000?userId=b1b4ded1-9b67-4351-9285-8259019af0a1");
+        const btnCreate = document.getElementById("btnCreate");
+        ws.onmessage = message => {
+            const response = JSON.parse(message.data);
+            console.log(response);
+        }
+        btnCreate.addEventListener("click", e => {
+
+            const payLoad = {
+                event: "createMove",
+                data: {
+                    gameId: '0efa82cd-c839-4f45-8cb4-e817831a7e32',
+                    row: 6,
+                    column: 6
+                }
+            }
+
+            ws.send(JSON.stringify(payLoad));
+
+        })
+    </script>
+</body>
+
+</html>

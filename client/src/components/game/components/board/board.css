@@ -1,0 +1,13 @@
+.board-container {
+    position: relative;
+    width: calc(var(--slot-size) * var(--columns));
+    height: calc(var(--slot-size) * var(--rows));
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), var(--slot-size));
+    grid-template-rows: repeat(var(--rows), var(--slot-size));
+    grid-auto-flow: column;
+    position: absolute;
+}

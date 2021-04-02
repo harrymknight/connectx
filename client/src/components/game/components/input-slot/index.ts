@@ -1,0 +1,1 @@
+export { default as InputSlot } from './input-slot';
